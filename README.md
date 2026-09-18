@@ -1,5 +1,17 @@
 # Welcome to Anthropic's Prompt Engineering Interactive Tutorial
 
+# ⚠️ 2026 Update Note
+
+This fork adapts the code examples to `anthropic>=1.0` (released August 20,
+2026), which removed the `temperature`, `top_p`, and `top_k` parameters from
+`messages.create()` (see the official SDK's
+[MIGRATION.md](https://github.com/anthropics/anthropic-sdk-python/blob/main/MIGRATION.md)).
+
+The original notebooks' `get_completion(...)` cells included
+`temperature=0.0` for deterministic output; this parameter has been removed
+and the cells updated accordingly. The prompt engineering concepts remain
+unchanged only the API call syntax is different.
+
 ## Course introduction and goals
 
 This course is intended to provide you with a comprehensive step-by-step understanding of how to engineer optimal prompts within Claude.
